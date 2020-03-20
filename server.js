@@ -1,9 +1,7 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
-
 const http = require('http')
-
 const router = require('./routes/routes')
 
 app.set('view engine', 'ejs')

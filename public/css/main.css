@@ -1,3 +1,7 @@
-div.hrefcv {
+.hrefcv {
   color: red;
+  padding: 1em; }
+
+.hrefcvhome {
+  color: blue;
   padding: 1em; }

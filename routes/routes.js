@@ -1,15 +1,13 @@
-
-
 const home = require('./home.js')
 const cv = require('./cv.js')
-const service = require('./service.js')
+const competence = require('./competence.js')
 
 module.exports = (app) => {
     app.use('/', home )
 
-    app.use('/cv', cv )
+    app.use('/Cv', cv )
 
-    app.use('/service', service )
+    app.use('/Competence', competence )
 
     app.use(function(req,res){
         res.status(404).render('pages/error404',)
