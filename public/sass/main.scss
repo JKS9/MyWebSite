@@ -1,8 +1,58 @@
-.hrefcv {
-    color: red;
-    padding: 1em
-}
-.hrefcvhome {
-    color: blue;
-    padding: 1em
+#Menu {
+    position: fixed;
+    width: 100%;
+    background:#fff;
+    box-shadow: 0 0 0.4em #9E9E9E;
+    z-index: 999;
+    .Logo {
+        color: #000;
+        display: block;
+        padding: 0.9rem .75rem 0rem .75rem;
+        &:hover {
+            &:after {
+                width: 100%;
+                background:#000;
+                margin-top: 0.1em;
+            }
+        }
+        &:after {
+            content: '';
+            display: block;
+            margin: auto;
+            margin-top: auto;
+            height: 0.2em;
+            width: 0;
+            background:transparent;
+            transition: width .15s ease,background-color .5s ease;
+            margin-top: 0.375em;
+        }
+    }
+    .ListeMenu {
+        color: #000;
+        display: block;
+        padding: 0.9rem .75rem 0rem .75rem;
+        &:hover {
+            background:#fff;
+            &:after {
+                width: 100%;
+                background:#000;
+                margin-top: 0.1em;
+            }
+        }
+        &:after {
+            content: '';
+            display: block;
+            margin: auto;
+            margin-top: auto;
+            height: 0.2em;
+            width: 0;
+            background:transparent;
+            transition: width .15s ease,background-color .5s ease;
+            margin-top: 0.375em;
+        }
+    }
+    .ContactButton {
+        background: #1E90FF;
+        transition: background-color .6s ease;
+    }
 }
