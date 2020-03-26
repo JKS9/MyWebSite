@@ -1,47 +1,167 @@
-#Menu {
+.Menu {
   position: fixed;
   width: 100%;
   background: #fff;
   box-shadow: 0 0 0.4em #9E9E9E;
-  z-index: 999; }
-  #Menu .Logo {
-    color: #000;
-    display: block;
-    padding: 0.9rem .75rem 0rem .75rem; }
-    #Menu .Logo:hover:after {
-      width: 100%;
-      background: #000;
-      margin-top: 0.1em; }
-    #Menu .Logo:after {
-      content: '';
+  z-index: 999;
+  transition: 0.7s; }
+  .Menu .navbar {
+    background-color: #fff;
+    transition: 0.7s; }
+    .Menu .navbar .Logo {
+      color: #000;
       display: block;
-      margin: auto;
-      margin-top: auto;
-      height: 0.2em;
-      width: 0;
-      background: transparent;
-      transition: width .15s ease,background-color .5s ease;
-      margin-top: 0.375em; }
-  #Menu .ListeMenu {
-    color: #000;
-    display: block;
-    padding: 0.9rem .75rem 0rem .75rem; }
-    #Menu .ListeMenu:hover {
-      background: #fff; }
-      #Menu .ListeMenu:hover:after {
+      padding: 0.9rem .75rem 0rem .75rem;
+      font-weight: bold; }
+      .Menu .navbar .Logo:hover:after {
         width: 100%;
         background: #000;
         margin-top: 0.1em; }
-    #Menu .ListeMenu:after {
-      content: '';
+      .Menu .navbar .Logo:after {
+        content: '';
+        display: block;
+        margin: auto;
+        margin-top: auto;
+        height: 0.2em;
+        width: 0;
+        background: transparent;
+        transition: width .15s ease,background-color .5s ease;
+        margin-top: 0.375em; }
+    .Menu .navbar .ListeMenu {
+      color: #000;
       display: block;
-      margin: auto;
-      margin-top: auto;
-      height: 0.2em;
-      width: 0;
-      background: transparent;
-      transition: width .15s ease,background-color .5s ease;
-      margin-top: 0.375em; }
-  #Menu .ContactButton {
-    background: #1E90FF;
-    transition: background-color .6s ease; }
+      padding: 1rem 1rem 0rem 1rem; }
+      .Menu .navbar .ListeMenu:hover {
+        background: #fff;
+        transition: 0.7s; }
+        .Menu .navbar .ListeMenu:hover:after {
+          width: 100%;
+          background: #000;
+          margin-top: 0.1em; }
+      .Menu .navbar .ListeMenu:after {
+        content: '';
+        display: block;
+        margin: auto;
+        margin-top: auto;
+        height: 0.2em;
+        width: 0;
+        background: transparent;
+        transition: width .15s ease,background-color .5s ease;
+        margin-top: 0.375em; }
+    @media (max-width: 768px) {
+      .Menu .navbar .navbar-menu {
+        padding: 0; }
+        .Menu .navbar .navbar-menu .navbar-end {
+          transition: 0.7s; }
+          .Menu .navbar .navbar-menu .navbar-end .ListeMenu {
+            color: #000;
+            display: block;
+            padding: 1rem 1rem 0rem 1rem; }
+            .Menu .navbar .navbar-menu .navbar-end .ListeMenu:hover {
+              background: #fff;
+              transition: 0.7s; }
+              .Menu .navbar .navbar-menu .navbar-end .ListeMenu:hover:after {
+                width: 100%;
+                background: #000;
+                margin-top: 0.1em; }
+            .Menu .navbar .navbar-menu .navbar-end .ListeMenu:after {
+              content: '';
+              display: block;
+              margin: auto;
+              margin-top: auto;
+              height: 0.2em;
+              width: 0;
+              background: transparent;
+              transition: width .15s ease,background-color .5s ease;
+              margin-top: 0.375em; } }
+    .Menu .navbar .ContactButton {
+      background: #1E90FF;
+      transition: background-color .6s ease;
+      transition: 0.7s; }
+      .Menu .navbar .ContactButton:hover {
+        background: #1E90FF; }
+
+.MenuScroll {
+  position: fixed;
+  width: 100%;
+  background: #1E90FF;
+  z-index: 999;
+  transition: 0.7s; }
+  .MenuScroll .navbar {
+    background-color: #1E90FF;
+    transition: 0.7s; }
+    .MenuScroll .navbar .Logo {
+      color: #fff;
+      display: block;
+      padding: 0.9rem .75rem 0rem .75rem;
+      font-weight: bold; }
+      .MenuScroll .navbar .Logo:hover:after {
+        width: 100%;
+        background: #fff;
+        margin-top: 0.1em; }
+      .MenuScroll .navbar .Logo:after {
+        content: '';
+        display: block;
+        margin: auto;
+        margin-top: auto;
+        height: 0.2em;
+        width: 0;
+        background: transparent;
+        transition: width .15s ease,background-color .5s ease;
+        margin-top: 0.375em; }
+    .MenuScroll .navbar .navbar-menu {
+      padding: 0; }
+    .MenuScroll .navbar .navbar-end {
+      transition: 0.7s; }
+      .MenuScroll .navbar .navbar-end .ListeMenu {
+        color: #fff;
+        display: block;
+        padding: 1rem 1rem 0rem 1rem; }
+        .MenuScroll .navbar .navbar-end .ListeMenu:hover {
+          background: #1E90FF;
+          transition: 0.7s; }
+          .MenuScroll .navbar .navbar-end .ListeMenu:hover:after {
+            width: 100%;
+            background: #fff;
+            margin-top: 0.1em; }
+        .MenuScroll .navbar .navbar-end .ListeMenu:after {
+          content: '';
+          display: block;
+          margin: auto;
+          margin-top: auto;
+          height: 0.2em;
+          width: 0;
+          background: transparent;
+          transition: width .15s ease,background-color .5s ease;
+          margin-top: 0.375em; }
+      @media (max-width: 768px) {
+        .MenuScroll .navbar .navbar-end {
+          background-color: #1E90FF; }
+          .MenuScroll .navbar .navbar-end .navbar-menu {
+            padding: 0; }
+            .MenuScroll .navbar .navbar-end .navbar-menu .ListeMenu {
+              color: #fff;
+              display: block;
+              padding: 1rem 1rem 0rem 1rem;
+              background-color: #1E90FF;
+              transition: 1s; }
+              .MenuScroll .navbar .navbar-end .navbar-menu .ListeMenu:hover {
+                background: #1E90FF; }
+                .MenuScroll .navbar .navbar-end .navbar-menu .ListeMenu:hover:after {
+                  width: 100%;
+                  background: #fff;
+                  margin-top: 0.1em; }
+              .MenuScroll .navbar .navbar-end .navbar-menu .ListeMenu:after {
+                content: '';
+                display: block;
+                margin: auto;
+                margin-top: auto;
+                height: 0.2em;
+                width: 0;
+                background: transparent;
+                transition: width .15s ease,background-color .5s ease;
+                margin-top: 0.375em; } }
+    .MenuScroll .navbar .ContactButton {
+      background: #fff;
+      color: #1E90FF;
+      transition: background-color .6s ease; }

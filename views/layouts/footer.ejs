@@ -8,22 +8,41 @@
     </div>
 </footer>
 <script type="text/javascript">
-document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector("header")
+  const adds_class_on_scroll = () => header.classList.add("Menu")
+  const add_class_on_scroll = () => header.classList.add("MenuScroll")
 
-const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-if ($navbarBurgers.length > 0) {
-  $navbarBurgers.forEach( el => {
-    el.addEventListener('click', () => {
-      const target = el.dataset.target;
-      const $target = document.getElementById(target);
+  const removes_class_on_scroll = () => header.classList.remove("Menu")
+  const remove_class_on_scroll = () => header.classList.remove("MenuScroll")
 
-      el.classList.toggle('is-active');
-      $target.classList.toggle('is-active');
-    });
+  function ScrollHeader() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 80) {
+      add_class_on_scroll() 
+      removes_class_on_scroll()
+    } else {
+      adds_class_on_scroll() 
+      remove_class_on_scroll() 
+    }
+  }
+
+  window.onscroll = function() {ScrollHeader()};
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    if ($navbarBurgers.length > 0) {
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
+    }
   });
-}
-
-});
 </script>
 </body>
 </html>
