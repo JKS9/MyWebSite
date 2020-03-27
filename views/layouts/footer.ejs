@@ -1,12 +1,38 @@
-<footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-      </p>
+<section class="hero is-dark is-bold">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <br>
+      <h2>Une question ? une idée ?</h2>
+      <p>Tous bon project commence par une bonne discution</p>
+      <a class="button is-white is-medium" href="/Contact">Contact</a>
     </div>
+  </div>
+</section>
+<section class="hero" style="padding: 2em;">
+  <h2>Mes réseaux</h2>
+  <div class="container has-text-centered">
+    <div class="buttons">
+      <a class="button" href="/">
+        <span class="icon">
+          <i class="fab fa-linkedin-in"></i>
+        </span>
+        <span>Linkedin</span>
+      </a>
+      <a class="button" href="/">
+        <span class="icon">
+          <i class="fab fa-github"></i>
+        </span>
+        <span>GitHub</span>
+      </a>
+    </div>
+  </div>
+</section>
+<footer class="hero is-dark is-bold">
+  <h1>DEVELOPPEUR WEB</h1>
+  <small>&copy; Copyright <%= years %>, Tous droits réserver, fait par Etienne Juzans</small>
 </footer>
+
+
 <script type="text/javascript">
   const header = document.querySelector("header")
   const adds_class_on_scroll = () => header.classList.add("Menu")
@@ -24,10 +50,7 @@
       remove_class_on_scroll() 
     }
   }
-
   window.onscroll = function() {ScrollHeader()};
-
-
 
   document.addEventListener('DOMContentLoaded', () => {
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
@@ -44,5 +67,6 @@
     }
   });
 </script>
+
 </body>
 </html>
