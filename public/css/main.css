@@ -12,7 +12,8 @@
       color: #000;
       display: block;
       padding: 0.9rem .75rem 0rem .75rem;
-      font-weight: bold; }
+      font-weight: bold;
+      font-family: 'IBM Plex Mono', monospace; }
       .Menu .navbar .Logo:hover:after {
         width: 100%;
         background: #000;
@@ -94,7 +95,8 @@
       color: #fff;
       display: block;
       padding: 0.9rem .75rem 0rem .75rem;
-      font-weight: bold; }
+      font-weight: bold;
+      font-family: 'IBM Plex Mono', monospace; }
       .MenuScroll .navbar .Logo:hover:after {
         width: 100%;
         background: #fff;
@@ -165,3 +167,22 @@
       background: #fff;
       color: #1E90FF;
       transition: background-color .6s ease; }
+
+#FooterStart h2 {
+  font-family: 'Comic Neue', cursive;
+  font-size: 1.5em;
+  margin: 0em 0em 1em 0em; }
+
+#FooterStart a {
+  margin: 1em 0em 1em 0em;
+  padding: 0em 1.5em; }
+
+#FooterEnd {
+  text-align: center;
+  padding: 1em 0em; }
+  #FooterEnd a {
+    text-decoration: none;
+    color: #FFF; }
+    #FooterEnd a:hover {
+      color: #FFF;
+      text-decoration: underline; }
